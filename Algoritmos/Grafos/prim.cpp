@@ -19,7 +19,7 @@ int prim(vii &grafo, int numeroVertices, int inicio){
   dist[inicio] = 0;
   
   while(!pqueue.empty()){
-    int d = pqueue.top().first, u = pqueue.top().second;
+    int u = pqueue.top().second;
     pqueue.pop();
     if(vis[u]) continue;
     vis[u] = 1; resp += dist[u];
