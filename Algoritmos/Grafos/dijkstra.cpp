@@ -41,7 +41,7 @@ int main(void){
     grafo[v].push_back(ii(u, w));
   }
   
-  printf("%d\n", dijkstra(grafo, numVertices + 1, U, V));
+  cout << dijkstra(grafo, numVertices + 1, U, V) << "\n";
   
   return 0;
 }
