@@ -12,7 +12,7 @@ vi visitado;
 void dfs(int u){
   visitado[u] = 1;
   for(auto v : grafo[u])
-    if(!visitado[u])
+    if(!visitado[v])
       dfs(v);
 }
 
